@@ -1,0 +1,11 @@
+G:\Users\Dylan\Dropbox\Shared\Escudo\GTA 5 Server\resources\EGRPProject\EGRPProject\obj\Debug\EGRPProject.dll
+G:\Users\Dylan\Dropbox\Shared\Escudo\GTA 5 Server\resources\EGRPProject\EGRPProject\obj\Debug\EGRPProject.pdb
+G:\Users\Dylan\Dropbox\Shared\Escudo\GTA 5 Server\resources\EGRPProject\EGRPProject\bin\Debug\EGRPProject.dll.config
+G:\Users\Dylan\Dropbox\Shared\Escudo\GTA 5 Server\resources\EGRPProject\EGRPProject\bin\Debug\EGRPProject.dll
+G:\Users\Dylan\Dropbox\Shared\Escudo\GTA 5 Server\resources\EGRPProject\EGRPProject\bin\Debug\EGRPProject.pdb
+G:\Users\Dylan\Dropbox\Shared\Escudo\GTA 5 Server\resources\EGRPProject\EGRPProject\bin\Debug\GrandTheftMultiplayer.Server.exe
+G:\Users\Dylan\Dropbox\Shared\Escudo\GTA 5 Server\resources\EGRPProject\EGRPProject\bin\Debug\GrandTheftMultiplayer.Shared.dll
+G:\Users\Dylan\Dropbox\Shared\Escudo\GTA 5 Server\resources\EGRPProject\EGRPProject\bin\Debug\MySql.Data.dll
+G:\Users\Dylan\Dropbox\Shared\Escudo\GTA 5 Server\resources\EGRPProject\EGRPProject\bin\Debug\NLog.dll
+G:\Users\Dylan\Dropbox\Shared\Escudo\GTA 5 Server\resources\EGRPProject\EGRPProject\bin\Debug\NLog.xml
+G:\Users\Dylan\Dropbox\Shared\Escudo\GTA 5 Server\resources\EGRPProject\EGRPProject\obj\Debug\Server.csprojResolveAssemblyReference.cache

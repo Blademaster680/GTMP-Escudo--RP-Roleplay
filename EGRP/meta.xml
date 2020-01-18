@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<meta>
+  <info name="EGRP" author="Blademaster680" type="script" async="true" />
+  <!-- Assemblys -->
+  <assembly ref="System.Data.dll"/>
+  <assembly ref="MySql.Data.dll"/>
+  <!-- Main -->
+  <script src="EGRPProject.dll" type="server" lang="compiled" />
+  <include resource="doormanager" />
+  <include resource="gtaocharacter" />
+
+  <!-- CEF-->
+  <script src="clientside/js/CEFController.js" type="client" lang="javascript" />
+  <script src="clientside/js/KeyController.js" type="client" lang="javascript" />
+  <script src="clientside/js/MenuManager.js" type="client" lang="javascript" />
+  <script src="clientside/js/CharacterManager.js" type="client" lang="javascript" />
+  <script src="clientside/js/VehicleController.js" type="client" lang="javascript" />
+  <script src="clientside/js/BlipManager.js" type="client" lang="javascript" />
+  <script src="clientside/js/HUDManager.js" type="client" lang="javascript" />
+  <script src="clientside/js/BankManager.js" type="client" lang="javascript" />
+  <script src="clientside/js/SoundManager.js" type="client" lang="javascript" />
+  <script src="clientside/js/JobManager.js" type="client" lang="javascript" />
+  
+  <file src="clientside/web/login.html" />
+  <file src="clientside/web/register.html" />
+  <file src="clientside/web/charactername.html" />
+  <file src="clientside/web/gopostaljobmenu.html" />
+  <file src="clientside/web/moneytransportjobmenu.html" />
+  <file src="clientside/css/login.css" />
+  <file src="clientside/css/materialize.css" />
+  <file src="clientside/images/EscudoLogo.png" />
+  <file src="clientside/fonts/roboto/Roboto-Regular.woff2 " />
+  <file src="clientside/fonts/roboto/Roboto-Bold.woff2 " />
+  <file src="clientside/fonts/roboto/Roboto-Regular.woff " />
+  <file src="clientside/fonts/roboto/Roboto-Bold.woff " />
+  <file src="clientside/fonts/roboto/Roboto-Bold.ttf " />
+  <file src="clientside/fonts/roboto/Roboto-Regular.ttf " />
+  <file src="clientside/web/js/jquery.min.js"  />
+  <file src="clientside/web/js/materialize.min.js"  />
+
+  <file src="clientside/sounds/ATM.mp3"  />
+</meta>

@@ -1,0 +1,95 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link href="../css/login.css" rel="stylesheet" />
+    <link href="../css/materialize.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <div class="section game-panel">
+            <main>
+                <center>
+                    <div class="section"></div>
+                    <div class="container">
+                        <div class="z-depth-5 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
+                            <form asp-controller="Account" asp-action="GameLogin" asp-route-returnurl="@ViewData[" ReturnUrl"]" method="post" class="col s12">
+                                <img src="../images/EscudoLogo.png" style="width:250px" class="circle responsive-img" />
+                                <br />
+                                <div class='row'>
+                                    <div class='col s12'>
+                                    </div>
+                                </div>
+                                <div asp-validation-summary="ModelOnly"></div>
+                                <div class='row'>
+                                    <div class='input-field col s12'>
+                                        <div>
+                                            <label for='username'>Enter your username</label>
+                                            <input class='validate' type='text' id='username' autofocus />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='row'>
+                                    <div class='input-field col s12'>
+                                        <div>
+                                            <label for='email'>Enter your email address</label>
+                                            <input class='validate' type='email' id='email' />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='row'>
+                                    <div class='input-field col s12'>
+                                        <label for='password'>Enter your password</label>
+                                        <input class='validate' type='password' id='password' />
+                                    </div>
+                                    <label style='float: right;'>
+                                        <a asp-controller="Game" asp-action="ForgotPassword" class='red-text'><b>Forgot Password?</b></a>
+                                    </label>
+                                </div>
+                                <br />
+                                <center>
+                                    <div class='row'>
+                                        <button onclick="logPlayer();" type='submit' name='btn_login' class='col s12 btn btn-large waves-effect blue'>Register</button>
+                                    </div>
+                                    <br />
+                                    <button onclick="loginForm();" type='submit' class='col s12 waves-effect' style="background-color: Transparent; color: #2196F3; border: hidden;">Already have an account</button>
+
+                                    <br />
+                                    <br />
+                                </center>
+                            </form>
+                        </div>
+                    </div>
+                </center>
+                <div class="section"></div>
+                <div class="section"></div>
+            </main>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('select').material_select();
+        });
+
+        function logPlayer()  //this is the function we called with OnClick in the last step
+        {
+            var username = $("#username").val(); //set a var "username" to the value of the input with the id "username"
+            var email = $("#email").val(); //set a var "email" to the value of the input with the id "email"
+            var password = $("#password").val();//set a var "password" to the value of the input with the id "password"
+            resourceCall("register", username, email, password); //call a function named "login" in our javascript file.
+        };
+        function loginForm()  //this is the function we called with OnClick in the last step
+        {
+            resourceCall("loginform");
+        };
+    </script>
+</body>
+</html>

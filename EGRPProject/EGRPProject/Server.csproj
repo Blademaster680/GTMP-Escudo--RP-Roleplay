@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AE9C07E2-7C44-4833-ABD9-993D87B48D4C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EGRPProject</RootNamespace>
+    <AssemblyName>EGRPProject</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GrandTheftMultiplayer.Server, Version=0.1.513.481, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\grandtheftmultiplayer.api.0.1.513.481\lib\net452\GrandTheftMultiplayer.Server.exe</HintPath>
+    </Reference>
+    <Reference Include="GrandTheftMultiplayer.Shared, Version=0.1.489.410, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\grandtheftmultiplayer.api.0.1.513.481\lib\net452\GrandTheftMultiplayer.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.4.9\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.cs" />
+    <Compile Include="Commands.cs" />
+    <Compile Include="Database\MySQL.cs" />
+    <Compile Include="Data\Ban.cs" />
+    <Compile Include="Data\Character.cs" />
+    <Compile Include="Data\IAccountData.cs" />
+    <Compile Include="Data\Vehicle.cs" />
+    <Compile Include="DoorManager.cs" />
+    <Compile Include="Global\CEFController.cs" />
+    <Compile Include="Global\GlobalVars.cs" />
+    <Compile Include="Jobs\Commands.cs" />
+    <Compile Include="Jobs\JobManager.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyManager.cs" />
+    <Compile Include="ATMManager.cs" />
+    <Compile Include="ShopManager.cs" />
+    <Compile Include="VehicleController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="types-gt-mp\Declarations.d.ts" />
+    <TypeScriptCompile Include="types-gt-mp\GrandTheftMultiplayer.Client.GUI.d.ts" />
+    <TypeScriptCompile Include="types-gt-mp\GrandTheftMultiplayer.Client.Javascript.d.ts" />
+    <TypeScriptCompile Include="types-gt-mp\GrandTheftMultiplayer.Client.Javascript.ScriptContext.d.ts" />
+    <TypeScriptCompile Include="types-gt-mp\GrandTheftMultiplayer.Client.Misc.d.ts" />
+    <TypeScriptCompile Include="types-gt-mp\GrandTheftMultiplayer.Client.Sound.d.ts" />
+    <TypeScriptCompile Include="types-gt-mp\GrandTheftMultiplayer.Client.Streamer.d.ts" />
+    <TypeScriptCompile Include="types-gt-mp\GrandTheftMultiplayer.Client.Sync.d.ts" />
+    <TypeScriptCompile Include="types-gt-mp\GrandTheftMultiplayer.Client.Util.d.ts" />
+    <TypeScriptCompile Include="types-gt-mp\GrandTheftMultiplayer.Shared.d.ts" />
+    <TypeScriptCompile Include="types-gt-mp\GrandTheftMultiplayer.Shared.Math.d.ts" />
+    <TypeScriptCompile Include="types-gt-mp\GTA.d.ts" />
+    <TypeScriptCompile Include="types-gt-mp\GTA.Math.d.ts" />
+    <TypeScriptCompile Include="types-gt-mp\GTA.Native.d.ts" />
+    <TypeScriptCompile Include="types-gt-mp\GTA.NaturalMotion.d.ts" />
+    <TypeScriptCompile Include="types-gt-mp\GTA.UI.d.ts" />
+    <TypeScriptCompile Include="types-gt-mp\index.d.ts" />
+    <TypeScriptCompile Include="types-gt-mp\Microsoft.ClearScript.d.ts" />
+    <TypeScriptCompile Include="types-gt-mp\NativeUI.d.ts" />
+    <TypeScriptCompile Include="types-gt-mp\NativeUI.UIMenu.d.ts" />
+    <TypeScriptCompile Include="types-gt-mp\NativeUI.UIMenuItem.d.ts" />
+    <TypeScriptCompile Include="types-gt-mp\NativeUI.UIResText.d.ts" />
+    <TypeScriptCompile Include="types-gt-mp\System.Collections.d.ts" />
+    <TypeScriptCompile Include="types-gt-mp\System.Collections.Generic.d.ts" />
+    <TypeScriptCompile Include="types-gt-mp\System.d.ts" />
+    <TypeScriptCompile Include="types-gt-mp\System.Drawing.d.ts" />
+    <TypeScriptCompile Include="types-gt-mp\System.Windows.Forms.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="clientside\fonts\roboto\Roboto-Bold.eot" />
+    <None Include="clientside\fonts\roboto\Roboto-Bold.ttf" />
+    <None Include="clientside\fonts\roboto\Roboto-Bold.woff" />
+    <None Include="clientside\fonts\roboto\Roboto-Bold.woff2" />
+    <None Include="clientside\fonts\roboto\Roboto-Light.eot" />
+    <None Include="clientside\fonts\roboto\Roboto-Light.ttf" />
+    <None Include="clientside\fonts\roboto\Roboto-Light.woff" />
+    <None Include="clientside\fonts\roboto\Roboto-Light.woff2" />
+    <None Include="clientside\fonts\roboto\Roboto-Medium.eot" />
+    <None Include="clientside\fonts\roboto\Roboto-Medium.ttf" />
+    <None Include="clientside\fonts\roboto\Roboto-Medium.woff" />
+    <None Include="clientside\fonts\roboto\Roboto-Medium.woff2" />
+    <None Include="clientside\fonts\roboto\Roboto-Regular.eot" />
+    <None Include="clientside\fonts\roboto\Roboto-Regular.ttf" />
+    <None Include="clientside\fonts\roboto\Roboto-Regular.woff" />
+    <None Include="clientside\fonts\roboto\Roboto-Regular.woff2" />
+    <None Include="clientside\fonts\roboto\Roboto-Thin.eot" />
+    <None Include="clientside\fonts\roboto\Roboto-Thin.ttf" />
+    <None Include="clientside\fonts\roboto\Roboto-Thin.woff" />
+    <None Include="clientside\fonts\roboto\Roboto-Thin.woff2" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="clientside\css\login.css" />
+    <Content Include="clientside\css\materialize.css" />
+    <Content Include="clientside\images\EscudoLogo.png" />
+    <Content Include="clientside\js\BankManager.js" />
+    <Content Include="clientside\js\BlipManager.js" />
+    <Content Include="clientside\js\CEFController.js" />
+    <Content Include="clientside\js\CharacterManager.js" />
+    <Content Include="clientside\js\HUDManager.js" />
+    <Content Include="clientside\js\JobManager.js" />
+    <Content Include="clientside\js\KeyController.js" />
+    <Content Include="clientside\js\SoundManager.js" />
+    <Content Include="clientside\js\VehicleController.js" />
+    <Content Include="clientside\sounds\ATM.mp3" />
+    <Content Include="clientside\web\gopostaljobmenu.html" />
+    <Content Include="clientside\web\moneytransportjobmenu.html" />
+    <Content Include="clientside\web\js\jquery.min.js" />
+    <Content Include="clientside\js\Login.js" />
+    <Content Include="clientside\web\js\materialize.min.js" />
+    <Content Include="clientside\js\MenuManager.js" />
+    <Content Include="clientside\web\charactername.html" />
+    <Content Include="clientside\web\register.html" />
+    <Content Include="clientside\web\login.html" />
+    <Content Include="clientside\web\main.css" />
+    <Content Include="meta.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

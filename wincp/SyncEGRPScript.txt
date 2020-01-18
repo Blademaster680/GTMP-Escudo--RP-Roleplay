@@ -1,0 +1,6 @@
+option batch abort
+option confirm off
+open ftpes://Dylan:D3c3mb3r@mx2.crestit.com/
+rm /resources/EGRP/*
+synchronize remote "G:\Users\Dylan\Dropbox\Shared\Escudo\GTA 5 Server\resources\EGRP" /resources/EGRP
+exit
